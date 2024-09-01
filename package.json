@@ -1,0 +1,22 @@
+{
+  "name": "defaultkavy-theme",
+  "displayName": "defaultkavy theme",
+  "publisher": "defaultkavy",
+  "description": "",
+  "version": "0.1.1",
+  "engines": {
+    "vscode": "^1.92.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "DEFAULTKAVY Dark Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/defaultkavy theme-color-theme.json"
+      }
+    ]
+  }
+}
