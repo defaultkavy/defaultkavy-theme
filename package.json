@@ -1,11 +1,14 @@
 {
   "name": "defaultkavy-theme",
-  "displayName": "defaultkavy theme",
+  "displayName": "DEFAULTKAVY Theme",
   "publisher": "defaultkavy",
   "description": "",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.92.0"
+  },
+  "repository": {
+    "url": "git+https://git.defaultkavy.com/defaultkavy/theme.git"
   },
   "categories": [
     "Themes"
@@ -15,8 +18,15 @@
       {
         "label": "DEFAULTKAVY Dark Theme",
         "uiTheme": "vs-dark",
-        "path": "./themes/defaultkavy theme-color-theme.json"
+        "path": "./themes/theme.json"
       }
     ]
+  },
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
   }
 }
