@@ -2,3 +2,8 @@
 .vscode-test/**
 .gitignore
 vsc-extension-quickstart.md
+src
+bun.lock
+tsconfig.json
+node_modules
+generate.ts
