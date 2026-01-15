@@ -3,12 +3,12 @@
   "displayName": "DEFAULTKAVY Theme",
   "publisher": "defaultkavy",
   "description": "",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.92.0"
   },
   "repository": {
-    "url": "git+https://git.defaultkavy.com/defaultkavy/theme.git"
+    "url": "git+https://github.com/defaultkavy/defaultkavy-theme.git"
   },
   "categories": [
     "Themes"

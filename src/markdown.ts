@@ -8,7 +8,7 @@ export const markdown_tokenColors: TokenColor[] = [
         }
     },
     {
-        scope: "markup.heading.markdown",
+        scope: ["markup.heading.markdown", "punctuation.definition.heading.markdown"],
         settings: {
             foreground: colors.orange,
             fontStyle: 'bold',
@@ -16,10 +16,7 @@ export const markdown_tokenColors: TokenColor[] = [
     },
     {
         scope: [
-            "punctuation.definition.list.begin.markdown",
-            "punctuation.definition.quote.begin.markdown",
-            "punctuation.definition.link",
-            "punctuation.definition.metadata.markdown",
+            "punctuation.definition",
         ],
         settings: {
             foreground: colors.cyan,
@@ -60,6 +57,24 @@ export const markdown_tokenColors: TokenColor[] = [
         scope: "markup.underline.link",
         settings: {
             foreground: colors.blue
+        }
+    },
+    {
+        scope: "markup.table.markdown",
+        settings: {
+            foreground: colors.white
+        }
+    },
+    {
+        scope: "punctuation.separator.table.markdown",
+        settings: {
+            foreground: colors.cyan
+        }
+    },
+    {
+        scope: "fenced_code.block.language.markdown",
+        settings: {
+            foreground: colors.cyan
         }
     }
 ]

@@ -1,8 +1,8 @@
 export const colors = {
-    red: '#bd5959',
-    blue: '#63aad4',
-    white: '#A9B1D6',
-    orange: '#b96944',
+    red: '#b84f61',
+    blue: '#668fe7',
+    white: '#9caab3',
+    orange: '#ce7d58',
     purple: '#A792E0',
     grey: '#9caab3',
     cyan: '#51adb9',
@@ -10,7 +10,7 @@ export const colors = {
     green: '#6c853e',
     lightGreen: '#80b690',
     pink: '#d67cbb',
-    yellow: '#c4a142',
+    yellow: '#cea944',
     comment: '#506779'
 }
 
@@ -20,16 +20,16 @@ export const codeColors = {
     readwrite: colors.white,
     parameter: colors.orange,
     function: colors.purple,
-    property: colors.grey,
+    property: colors.white,
     class: colors.yellow,
-    type: colors.lime,
+    type: colors.yellow,
     primitive: colors.green,
     punctuation: colors.cyan,
     global: colors.cyan,
     string: colors.lightGreen,
     tag: colors.pink,
     attribute: colors.yellow,
-    comment: colors.comment
+    comment: colors.comment,
 }
 
 export type TokenColor = {

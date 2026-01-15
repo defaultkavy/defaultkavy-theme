@@ -69,10 +69,9 @@ export const ts_tokenColors: TokenColor[] = [
     },
     {
         // 类型名
-        scope: "entity.name.type",
+        scope: ["meta.type.declaration"],
         settings: {
             foreground: codeColors.type,
-            fontStyle: "bold"
         }
     },
     {
@@ -99,10 +98,9 @@ export const ts_tokenColors: TokenColor[] = [
     },
     {
         // class
-        scope: ["entity.name.type.class", "variable.language"],
+        scope: ["meta.class", "variable.language"],
         settings: {
             foreground: codeColors.class,
-            fontStyle: 'bold'
         }
-    }
+    },
 ]
