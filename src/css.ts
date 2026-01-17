@@ -10,13 +10,13 @@ export const css_tokenColors: TokenColor[] = [
     {
         scope: "meta.property-value.css",
         settings: {
-            foreground: colors.cyan
+            foreground: colors.green
         }
     },
     {
         scope: "meta.selector.css",
         settings: {
-            foreground: codeColors.type
+            foreground: colors.yellow
         }
     },
     {
@@ -24,19 +24,19 @@ export const css_tokenColors: TokenColor[] = [
             "support.function"
         ],
         settings: {
-            foreground: codeColors.function
+            foreground: colors.purple
         }
     },
     {
         scope: ["variable.css", "variable.argument.css"],
         settings: {
-            foreground: codeColors.readwrite
+            foreground: colors.orange
         }
     },
     {
         scope: ["keyword.other.unit"],
         settings: {
-            foreground: colors.pink
+            foreground: colors.red
         }
     },
 ]

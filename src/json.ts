@@ -4,7 +4,7 @@ export const json_tokenColors: TokenColor[] = [
     {
         scope: "support.type.property-name",
         settings: {
-            foreground: colors.grey
+            foreground: colors.white
         }
     }
 ]

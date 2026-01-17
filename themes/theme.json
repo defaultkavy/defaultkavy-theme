@@ -64,12 +64,12 @@
         "editor.stackFrameHighlightBackground": "#e2bd3a20",
         "editor.wordHighlightBackground": "#517e7a44",
         "editor.wordHighlightStrongBackground": "#515c7e55",
-        "editorBracketHighlight.foreground1": "#698cd6",
-        "editorBracketHighlight.foreground2": "#68b3de",
-        "editorBracketHighlight.foreground3": "#9a7ecc",
-        "editorBracketHighlight.foreground4": "#25aac2",
-        "editorBracketHighlight.foreground5": "#80a856",
-        "editorBracketHighlight.foreground6": "#c49a5a",
+        "editorBracketHighlight.foreground1": "#9caab3",
+        "editorBracketHighlight.foreground2": "#7593d3",
+        "editorBracketHighlight.foreground3": "#86c2ca",
+        "editorBracketHighlight.foreground4": "#9caab3",
+        "editorBracketHighlight.foreground5": "#7593d3",
+        "editorBracketHighlight.foreground6": "#86c2ca",
         "editorBracketHighlight.unexpectedBracket.foreground": "#db4b4b",
         "editorBracketMatch.background": "#08080b",
         "editorBracketMatch.border": "#42465d",
@@ -245,11 +245,11 @@
         "statusBarItem.prominentBackground": "#101014",
         "statusBarItem.prominentHoverBackground": "#20222c",
         "statusBarItem.remoteBackground": "#55f8f8",
-        "statusBarItem.remoteForeground": "#101014",
+        "statusBarItem.remoteForeground": "#08080b",
         "statusBarItem.remoteHoverBackground": "#08080b",
         "statusBarItem.remoteHoverForeground": "#55f8f8",
         "tab.activeBackground": "#08080b",
-        "tab.activeBorder": "#26d3d3",
+        "tab.activeBorder": "#55f8f8",
         "tab.activeForeground": "#a9b1d6",
         "tab.activeModifiedBorder": "#1a1b26",
         "tab.border": "#101014",
@@ -326,7 +326,7 @@
                 "variable.other.constant"
             ],
             "settings": {
-                "foreground": "#668fe7"
+                "foreground": "#7593d3"
             }
         },
         {
@@ -343,10 +343,11 @@
         },
         {
             "scope": [
-                "punctuation.definition.template-expression"
+                "punctuation.definition.template-expression",
+                "punctuation.accessor.optional"
             ],
             "settings": {
-                "foreground": "#51adb9"
+                "foreground": "#76efff"
             }
         },
         {
@@ -376,17 +377,26 @@
         {
             "scope": "support.type.primitive",
             "settings": {
-                "foreground": "#6c853e",
+                "foreground": "#1b747a",
                 "fontStyle": "bold"
             }
         },
         {
             "scope": [
                 "meta.field.declaration",
-                "meta.object.member"
+                "meta.object-literal.key",
+                "variable.other.property"
             ],
             "settings": {
                 "foreground": "#9caab3"
+            }
+        },
+        {
+            "scope": [
+                "meta.object-literal.key string"
+            ],
+            "settings": {
+                "foreground": "#888a6b"
             }
         },
         {
@@ -407,15 +417,14 @@
         {
             "scope": "entity.name.tag",
             "settings": {
-                "foreground": "#d67cbb",
+                "foreground": "#ce7d58",
                 "fontStyle": "bold"
             }
         },
         {
             "scope": "meta.attribute",
             "settings": {
-                "foreground": "#cea944",
-                "fontStyle": "bold"
+                "foreground": "#cea944"
             }
         },
         {
@@ -427,7 +436,7 @@
         {
             "scope": "meta.property-value.css",
             "settings": {
-                "foreground": "#51adb9"
+                "foreground": "#80b690"
             }
         },
         {
@@ -450,7 +459,7 @@
                 "variable.argument.css"
             ],
             "settings": {
-                "foreground": "#9caab3"
+                "foreground": "#ce7d58"
             }
         },
         {
@@ -458,7 +467,7 @@
                 "keyword.other.unit"
             ],
             "settings": {
-                "foreground": "#d67cbb"
+                "foreground": "#b84f61"
             }
         },
         {
@@ -479,11 +488,20 @@
         },
         {
             "scope": [
-                "punctuation.definition"
+                "punctuation.definition.markdown",
+                "punctuation.definition.italic.markdown",
+                "punctuation.definition.list.begin.markdown",
+                "punctuation.definition.link.title.begin.markdown",
+                "punctuation.definition.link.title.end.markdown",
+                "punctuation.definition.link.description.begin.markdown",
+                "punctuation.definition.link.description.end.markdown",
+                "punctuation.definition.metadata.markdown",
+                "punctuation.definition.table.markdown",
+                "punctuation.separator.table.markdown",
+                "meta.separator.markdown"
             ],
             "settings": {
-                "foreground": "#51adb9",
-                "fontStyle": "bold"
+                "foreground": "#76efff"
             }
         },
         {
@@ -505,12 +523,6 @@
             }
         },
         {
-            "scope": "punctuation.definition.italic.markdown",
-            "settings": {
-                "foreground": "#51adb9"
-            }
-        },
-        {
             "scope": "string.other.link.title.markdown",
             "settings": {
                 "foreground": "#80b690"
@@ -519,7 +531,7 @@
         {
             "scope": "markup.underline.link",
             "settings": {
-                "foreground": "#668fe7"
+                "foreground": "#7593d3"
             }
         },
         {
@@ -529,15 +541,9 @@
             }
         },
         {
-            "scope": "punctuation.separator.table.markdown",
-            "settings": {
-                "foreground": "#51adb9"
-            }
-        },
-        {
             "scope": "fenced_code.block.language.markdown",
             "settings": {
-                "foreground": "#51adb9"
+                "foreground": "#76efff"
             }
         },
         {
@@ -554,10 +560,14 @@
         "enum": "#cea944",
         "interface": "#cea944",
         "variable": "#9caab3",
+        "variable.defaultLibrary": "#76efff",
         "property": "#9caab3",
-        "*.readonly": "#668fe7",
-        "variable.defaultLibrary": "#51adb9",
+        "*.readonly": "#7593d3",
+        "*.deprecated": {
+            "fontStyle": "strikethrough"
+        },
         "function": "#A792E0",
-        "method": "#A792E0"
+        "method": "#A792E0",
+        "typeParameter": "#ce7d58"
     }
 }

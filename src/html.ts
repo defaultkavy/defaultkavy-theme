@@ -14,7 +14,6 @@ export const html_tokenColors: TokenColor[] = [
         scope: "meta.attribute",
         settings: {
             foreground: codeColors.attribute,
-            fontStyle: "bold"
         }
     },
 ]

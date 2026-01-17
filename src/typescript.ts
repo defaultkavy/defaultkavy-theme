@@ -6,11 +6,15 @@ export const semanticTokenColors = {
     enum: codeColors.type,
     interface: codeColors.type,
     variable: codeColors.readwrite,
+    "variable.defaultLibrary": codeColors.global,
     property: codeColors.property,
     "*.readonly": codeColors.constant,
-    "variable.defaultLibrary": codeColors.global,
+    "*.deprecated": {
+        fontStyle: 'strikethrough'
+    },
     function: codeColors.function,
-    method: codeColors.function
+    method: codeColors.function,
+    typeParameter: codeColors.parameter
 }
 
 export const ts_tokenColors: TokenColor[] = [
@@ -48,7 +52,10 @@ export const ts_tokenColors: TokenColor[] = [
         }
     },
     {
-        scope: ["punctuation.definition.template-expression"],
+        scope: [
+            "punctuation.definition.template-expression",
+            "punctuation.accessor.optional"
+        ],
         settings: {
             foreground: codeColors.punctuation,
         }
@@ -84,9 +91,22 @@ export const ts_tokenColors: TokenColor[] = [
     },
     {
         // object/interface/type 属性名
-        scope: ["meta.field.declaration", "meta.object.member"],
+        scope: [
+            "meta.field.declaration", 
+            "meta.object-literal.key",
+            "variable.other.property",
+        ],
         settings: {
             foreground: codeColors.property,
+        }
+    },
+    {
+        // object/interface/type 属性名 by string
+        scope: [
+            "meta.object-literal.key string",
+        ],
+        settings: {
+            foreground: codeColors.propertyString,
         }
     },
     {

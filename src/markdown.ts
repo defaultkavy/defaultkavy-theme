@@ -8,19 +8,33 @@ export const markdown_tokenColors: TokenColor[] = [
         }
     },
     {
-        scope: ["markup.heading.markdown", "punctuation.definition.heading.markdown"],
+        // 标题
+        scope: [
+            "markup.heading.markdown", 
+            "punctuation.definition.heading.markdown"
+        ],
         settings: {
             foreground: colors.orange,
             fontStyle: 'bold',
         }
     },
     {
+        // 符号
         scope: [
-            "punctuation.definition",
+            "punctuation.definition.markdown",
+            "punctuation.definition.italic.markdown",
+            "punctuation.definition.list.begin.markdown",
+            "punctuation.definition.link.title.begin.markdown",
+            "punctuation.definition.link.title.end.markdown",
+            "punctuation.definition.link.description.begin.markdown",
+            "punctuation.definition.link.description.end.markdown",
+            "punctuation.definition.metadata.markdown",
+            "punctuation.definition.table.markdown",
+            "punctuation.separator.table.markdown",
+            "meta.separator.markdown"
         ],
         settings: {
             foreground: colors.cyan,
-            fontStyle: 'bold',
         }
     },
     {
@@ -38,19 +52,13 @@ export const markdown_tokenColors: TokenColor[] = [
     {
         scope: "punctuation.definition.bold.markdown",
         settings: {
-            foreground: colors.lightGreen
-        }
-    },
-    {
-        scope: "punctuation.definition.italic.markdown",
-        settings: {
-            foreground: colors.cyan
+            foreground: colors.green
         }
     },
     {
         scope: "string.other.link.title.markdown",
         settings: {
-            foreground: colors.lightGreen
+            foreground: colors.green
         }
     },
     {
@@ -63,12 +71,6 @@ export const markdown_tokenColors: TokenColor[] = [
         scope: "markup.table.markdown",
         settings: {
             foreground: colors.white
-        }
-    },
-    {
-        scope: "punctuation.separator.table.markdown",
-        settings: {
-            foreground: colors.cyan
         }
     },
     {
